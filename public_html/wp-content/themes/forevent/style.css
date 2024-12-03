@@ -1,0 +1,105 @@
+/*
+Theme Name: Forevent 2024
+Author: Grow Digital
+Description: Forevent theme for wordpress — 2024
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('assets/images/600a8efadfcd6.jpg'); /* Path to your image */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.hero-section .btn {
+    background-color: #0073e6;
+    color: #fff;
+    padding: 0.8em 1.5em;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.hero-section .btn:hover {
+    background-color: #005bb5;
+}
+
+/* Featured Content Section */
+.featured-content {
+    padding: 2em 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.featured-content h2 {
+    margin-bottom: 1.5em;
+}
+
+.featured-post {
+    margin: 1em 0;
+}
+
+.featured-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Recent Posts Section */
+.recent-posts {
+    padding: 2em 0;
+}
+
+.recent-posts h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.post-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.post-item {
+    width: 300px;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.post-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}

@@ -1,0 +1,276 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 Nov 2023, 12:37:35
+    Author     : HireHop Laptop
+*/
+.main
+{
+	margin: auto;
+}
+.clear{
+	clear: both;
+}
+[class*="col-"] {
+  float: left;
+  /*padding: 15px;*/
+}
+.prdt-img
+{
+	max-width: 60%;
+    height: 90%;
+    display: block;
+    margin: auto;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+.h1{
+	height: 150px;
+}
+.h2{
+	height: 250px;
+}
+.h3{
+	height: 55px;
+}
+.btn
+{
+	float: right;
+	margin-right: 25px;
+}
+h1,h2,h3,h4,h5,h6
+{
+	text-transform: none;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+#custom-cart-dialog {
+  max-height: 400px;
+  overflow-y: auto;
+}
+.cart_dialog{
+  background-color: white;
+  border: 1px solid black;
+}
+.ui-dialog-titlebar-close {
+  display: none;
+}
+.text-right {
+  text-align: right !important;
+}
+.table{
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 1rem;
+  color: #6F6F6F;
+  border: 1px solid #EDF1FF;
+}
+.table_head{
+  color: var(--header-color) !important;
+    font-size: 0.75rem;
+    background-color: #deedf7 !important;
+    background-image: #deedf7 !important;
+
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#checkout-form {
+  /* background-color: #316091; */
+  color: #2d5357;
+  font-weight:bold;
+  margin: 0px ;
+  border-radius:10px;
+  width: 97%;
+  box-shadow:  0 0 2px 2px #d9d9d9;
+  padding: 15px;
+
+}
+
+#checkout-form label {
+  padding-left:26px;
+  width:200px;
+  text-transform: uppercase;
+  display:inline-block;
+  font-size: 14px;
+}
+
+#checkout-form input[type=text], 
+#checkout-form input[type=file],
+#checkout-form textarea {
+  width: 305px;
+}
+
+.bdr{
+  border: 1px #6F6F6F solid;
+  border-radius: 0px;
+  box-shadow:  0 0 2px 2px #d9d9d9;
+}
+.bg{
+  background-color: #d9d9d9;
+}
+.fnt-14{
+  font-size: 14px;
+}
+.bold{
+  font-weight: 500;
+}
+.bold-1{
+  font-weight: bold;
+}
+.mb-1{
+  margin-bottom: 15px !important;
+}
+.mt-1{
+  margin-top: 15px !important;
+}
+
+/* *****************tree view************** */
+	ul, #myUL {
+	  list-style-type: none;
+	}
+
+	#myUL {
+	  margin: 0;
+	  padding: 0;
+	}
+
+	.caret {
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari 3.1+ */
+	  -moz-user-select: none; /* Firefox 2+ */
+	  -ms-user-select: none; /* IE 10+ */
+	  user-select: none;
+	}
+
+	.caret::before {
+	  content: "\25B6";
+	  color: var(--content-color);
+	  display: inline-block;
+	  margin-right: 6px;
+	  /*transform: rotate(90deg);*/
+	}
+	.caret_main {
+	  cursor: pointer;
+	  -webkit-user-select: none; /* Safari 3.1+ */
+	  -moz-user-select: none; /* Firefox 2+ */
+	  -ms-user-select: none; /* IE 10+ */
+	  user-select: none;
+	}
+
+	.caret_main::before {
+	  content: "\25B6";
+	  color: var(--content-color);
+	  display: inline-block;
+	  margin-right: 6px;
+	  transform: rotate(90deg);
+	}
+
+	.caret-down::before {
+	  -ms-transform: rotate(90deg); /* IE 9 */
+	  -webkit-transform: rotate(90deg); /* Safari */
+	  transform: rotate(90deg);  
+	}
+
+	.nested {
+	  display: none;
+	}
+
+	.active {
+	  display: block;
+	}
+	.fa-2x {
+		font-size: 1.5em;
+	}
+	.entry-content ul {
+		padding-left: 0px;
+	}
+	h1, h2, h3, h4, h5, h6 {
+	margin:0;
+	}
+	.webshop_main_div{
+		max-width: 100% !important;
+		margin: auto !important;
+	}
+	.webshop_left_div{
+		width: 25%;
+		float: left;
+	}
+	.webshop_right_div{
+		width: 75%;
+		float:left;
+	}
+	.cat_comma{
+		display: none;
+	}
